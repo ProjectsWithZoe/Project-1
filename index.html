@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iconic Photographers</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(0, 0, 0) 11.2%,
+          rgb(11, 132, 145) 91.1%
+        );
+        color: white;
+        max-width: 800px;
+        text-align: center;
+        margin: auto;
+      }
+      div {
+        display: block;
+        margin: 30px;
+      }
+      img {
+        max-width: 300px;
+        border-radius: 20px;
+        opacity: 1;
+      }
+      h1 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h2 {
+        border-radius: 1px solid grey;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+      }
+      h3 {
+        color: #ff895d;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+        border: 1px solid grey;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px auto;
+        width: 60%;
+      }
+      p {
+        color: #d5eeff;
+        font-family: "Courier New", Courier, monospace;
+        line-height: 1.5em;
+        font-weight: 400;
+      }
+      a {
+        text-decoration: none;
+        color: #ff895d;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        padding: 16px 24px;
+        border-radius: 30px;
+        box-shadow: rgba(255, 137, 93, 0.5) 0px 10px 10px 0;
+        border: none;
+        background-color: #ff895d;
+      }
+      .learn-more {
+        color: #155263;
+      }
+      .camera {
+        transition: all 200ms ease;
+      }
+      .camera:hover {
+        opacity: 0.3;
+        color: #d5eeff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <strong>Photographers</strong> :<br />
+      <em>Iconic photos and the cameras behind them</em>
+    </h1>
+    <hr />
+    <hr />
+    <div>
+      <h2>The 1940s</h2>
+
+      <h3>
+        <a href="https://en.wikipedia.org/wiki/Yousuf_Karsh" target="_blank"
+          >Yousuf Karsh</a
+        >
+      </h3>
+      <span class="camera">
+        <span>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/205/original/yk2.jpeg?1668292442"
+            class="c1"
+          /> </span
+      ></span>
+      <span>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/206/original/yk1.jpeg?1668292455"
+        />
+      </span>
+      <p>
+        "My portrait of Winston Churchill changed my life. I knew after I had
+        taken it that it was an important picture, but I could hardly have
+        dreamed that it would become one of the most widely reproduced images in
+        the history of photography." - <em> Yousuf Karsh</em>
+      </p>
+    </div>
+    <div class="photographers">
+      <h2>The 1970s</h2>
+
+      <h3>
+        <a href="https://en.wikipedia.org/wiki/Annie_Leibovitz" target="_blank"
+          >Annie Leibovitz</a
+        >
+      </h3>
+      <span class="camera">
+        <span>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/207/original/AL1.jpeg?1668292466"
+            class="c2"
+          /> </span
+      ></span>
+      <span>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/208/original/AL2.jpeg?1668292474"
+        />
+      </span>
+      <p>
+        No list of famous photographers would be complete without Annie
+        Leibovitz. She was the first woman to be named chief photographer of
+        Rolling Stone and went on to work for both Vogue and Elle. Using her
+        distinctive, fanciful style of portrait photography, she’s captured both
+        the personage and personalities of Queen Elizabeth II, Liberace, John
+        Lennon, Yoko Ono, Johnny Cash, and countless others.
+      </p>
+      <h3>
+        <a
+          href="https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Salgado"
+          target="_blank"
+          >Sebastião Salgado</a
+        >
+      </h3>
+      <span
+        ><span class="camera">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/209/original/SS2.jpeg?1668292491"
+            class="c3"
+          /> </span
+      ></span>
+      <span>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/210/original/ss4.jpg?1668292661"
+        />
+      </span>
+      <p>
+        This Brazilian photojournalist began his work as an economist and
+        transitioned to photography in 1973. Since then, he has traveled to over
+        120 countries documenting harsh living and working conditions. He has
+        been internationally recognized with a multitude of awards and grants;
+        most notably, he was named a UNICEF Goodwill Ambassador in 2001.
+      </p>
+
+      <button>
+        <a
+          href="https://www.photodoto.com/camera-history-timeline/"
+          target="_blank"
+          class="learn-more"
+          >Learn more</a
+        >
+      </button>
+    </div>
+    <script>
+      function clickedOne() {
+        answer = prompt(
+          "You've clicked on the Large Film Format Calumet 8*10! Do you have one at home?"
+        );
+        if (answer == "yes") {
+          alert("Enjoy using your camera!");
+        } else {
+          alert("Click 'Learn More' to learn about it and other cameras!");
+        }
+      }
+
+      function clickedTwo() {
+        answer = prompt(
+          "You've clicked on the Medium Film Format Mamiya RZ67! Do you have one at home?"
+        );
+        if (answer == "yes") {
+          alert("Enjoy using your camera!");
+        } else {
+          alert("Click 'Learn More' to learn about it and other cameras!");
+        }
+      }
+
+      function clickedThree() {
+        answer = prompt(
+          "You've clicked on the Digital Full Frame Canon EOS-1 Mark III! Do you have one at home?"
+        );
+        if (answer == "yes") {
+          alert("Enjoy using your camera!");
+        } else {
+          alert("Click 'Learn More' to learn about it and other cameras!");
+        }
+      }
+      let cameraOne = document.querySelector(".c1");
+      cameraOne.addEventListener("click", clickedOne);
+
+      let cameraTwo = document.querySelector(".c2");
+      cameraTwo.addEventListener("click", clickedTwo);
+
+      let cameraThree = document.querySelector(".c3");
+      cameraThree.addEventListener("click", clickedThree);
+    </script>
+  </body>
+</html>
